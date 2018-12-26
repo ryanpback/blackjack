@@ -15,7 +15,7 @@ func main() {
 		readyToPlay, correctInput = playOrQuit(input)
 
 		if readyToPlay && correctInput {
-			fmt.Println("Welcome")
+			playBlackjack()
 			break
 		}
 
