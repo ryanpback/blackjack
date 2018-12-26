@@ -1,0 +1,11 @@
+# VSCODE
+.vscode/*
+/.vscode/*
+
+### OSX ###
+.DS_Store
+*._DS_Store
+._.DS_Store
+*._
+._*
+._.*
