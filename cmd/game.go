@@ -9,7 +9,8 @@ import (
 func playBlackjack() {
 	fmt.Println("Welcome!")
 
-	deck := cards.GetDeck()
+	deck := cards.NewDeck()
 
-	fmt.Println(deck)
+	fmt.Println(deck.Cards[0].Suit.Symbol, deck.Cards[0].Type)
+	// fmt.Println(deck.Cards)
 }
