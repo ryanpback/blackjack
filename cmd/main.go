@@ -24,8 +24,6 @@ func main() {
 			break
 		}
 
-		if !readyToPlay && !correctInput {
-			fmt.Println("\n'" + input + "' is not a valid option")
-		}
+		fmt.Println("\n'" + input + "' is not a valid option")
 	}
 }
