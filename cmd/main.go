@@ -5,14 +5,13 @@ import (
 )
 
 func main() {
-	var input string
 	readyToPlay := false
 	correctInput := false
 
 	for {
 		displayWelcome()
-		fmt.Scanln(&input)
-		readyToPlay, correctInput = playOrQuit(input)
+		userInput := getUserInput()
+		readyToPlay, correctInput = playOrQuit(userInput)
 
 		if readyToPlay && correctInput {
 			playBlackjack()
@@ -24,6 +23,6 @@ func main() {
 			break
 		}
 
-		fmt.Println("\n'" + input + "' is not a valid option")
+		fmt.Println("\n'" + userInput + "' is not a valid option")
 	}
 }

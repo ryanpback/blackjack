@@ -16,7 +16,7 @@ var playerTests = []playerTest{
 
 func TestUserCantGiveBadDataForNumOfPlayers(t *testing.T) {
 	for _, pt := range playerTests {
-		nop, ci := getNumOfPlayers(pt.input)
+		nop, ci := getPlayerCount(pt.input)
 
 		if nop != pt.numOfPlayers {
 			t.Errorf("Passing '"+pt.input+"' should result in %t as ready to play", pt.numOfPlayers)
