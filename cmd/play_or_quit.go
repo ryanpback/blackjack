@@ -22,3 +22,24 @@ func playOrQuit(s string) (bool, bool) {
 	}
 	return false, false
 }
+
+func areWePlaying() bool {
+	readyToPlay := false
+	correctInput := false
+
+	for {
+		displayWelcome()
+		userInput := getUserInput()
+		readyToPlay, correctInput = playOrQuit(userInput)
+
+		if readyToPlay && correctInput {
+			return true
+		}
+
+		if !readyToPlay && correctInput {
+			return false
+		}
+
+		fmt.Println("\n'" + userInput + "' is not a valid option")
+	}
+}
