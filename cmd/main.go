@@ -1,14 +1,13 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	readyToPlay := areWePlaying()
 
 	if readyToPlay {
-		playBlackjack()
+		players := setUpGame()
+		playBlackjack(players)
 	}
 
 	fmt.Println("Goodbye")

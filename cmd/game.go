@@ -6,13 +6,11 @@ import (
 	"github.com/lapubell/cards"
 )
 
-func playBlackjack() {
+func playBlackjack(players []player) {
 	fmt.Println("Let's play!")
 	fmt.Println("========================")
 
-	numOfPlayers := getNumberOfPlayers()
-	fmt.Println("\nnum: ", numOfPlayers)
-
 	deck := cards.NewDeck()
+
 	fmt.Println(deck.Cards[0].Suit.Symbol, deck.Cards[0].Type)
 }
