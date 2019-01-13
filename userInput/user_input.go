@@ -1,8 +1,8 @@
-package main
+package userInput
 
 import "fmt"
 
-func getUserInput() string {
+func GetUserInput() string {
 	var input string
 	fmt.Scanln(&input)
 

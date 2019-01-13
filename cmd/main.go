@@ -1,14 +1,15 @@
 package main
 
-import "fmt"
+import "github.com/ryanpback/blackjack/blackjack"
 
 func main() {
 	readyToPlay := areWePlaying()
 
 	if readyToPlay {
-		players := setUpGame()
+		setUpPlayers()
+		players := blackjack.CreatePlayers("cmd")
 		playBlackjack(players)
 	}
 
-	fmt.Println("Goodbye")
+	closeGame()
 }

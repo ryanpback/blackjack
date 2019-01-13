@@ -7,3 +7,4 @@ This is a simple game of blackjack written by two cool dudes to play around with
 * run `go get ...`
 * `cd cmd`
 * `go build -o blackjack`
+* `./blackjack`
